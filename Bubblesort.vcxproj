@@ -119,9 +119,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(wxLibOrDllDir);%(AdditionalLibraryDirectories);C:\Program Files\OpenSSL-Win64\lib\VC\x64\MDd</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libssl.lib
-;libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(wxLibOrDllDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
       <OutputManifestFile>$(IntDir)$(TargetName)$(TargetExt).embed.manifest</OutputManifestFile>
@@ -144,9 +143,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(wxLibOrDllDir);%(AdditionalLibraryDirectories);C:\Program Files\OpenSSL-Win64\lib\VC\x64\MD</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libssl.lib
-;libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(wxLibOrDllDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
